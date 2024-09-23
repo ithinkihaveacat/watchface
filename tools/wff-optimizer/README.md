@@ -16,6 +16,7 @@ memory footprint of a WatchFace Format watch face:
 ## Building the tool
 
 ```shell
+# From the "tools" directory
 ./gradlew :wff-optimizer:jar
 ```
 
@@ -24,7 +25,8 @@ memory footprint of a WatchFace Format watch face:
 The following command will run the optimizations in place:
 
 ```shell
-java -jar wff_optimizer.jar --source PATH/TO/UNZIPPED/APK
+# From the "tools" directory
+java -jar wff-optimizer/build/libs/wff-optimizer.jar --verbose --source PATH/TO/UNZIPPED/APK
 ```
 
 Add `--verbose` to observe what the tool is doing.
